@@ -88,13 +88,6 @@
       ],
       "editor/title": [
         {
-          "command": "extension.extractFunctions",
-          "when": "resourceLangId == go",
-          "group": "navigation"
-        }
-      ],
-      "view/title": [
-        {
           "command": "fabric-network.uploadNetwork",
           "when": "view == fabric-network",
           "group": "navigation"
@@ -115,6 +108,11 @@
           "command": "fabric-network.switchNetwork",
           "title": "switch to this network",
           "when": "view == fabric-network && viewItem == inactiveNetwork",
+          "group": "inline"
+        },
+        {
+          "command": "wallets.deleteWallet",
+          "when": "view == wallets && viewItem == organization",
           "group": "inline"
         },
         {
