@@ -7,7 +7,6 @@ const {
 const fs = require("fs");
 
 function extractCredentials(loadedConnectionProfile) {
-function extractCredentials(loadedConnectionProfile) {
   if (!loadedConnectionProfile) {
     throw new Error("Loaded connection profile is undefined.");
   }
